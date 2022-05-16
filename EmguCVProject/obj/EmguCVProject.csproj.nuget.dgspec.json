@@ -1,28 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrei PC\\source\\repos\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj": {}
+    "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\EmguCVProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrei PC\\source\\repos\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj": {
+    "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\EmguCVProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrei PC\\source\\repos\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\EmguCVProject.csproj",
         "projectName": "EmguCVProject",
-        "projectPath": "C:\\Users\\Andrei PC\\source\\repos\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj",
-        "packagesPath": "C:\\Users\\Andrei PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrei PC\\source\\repos\\EmguCVProject\\EmguCVProject\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\EmguCVProject.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Andrei PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"

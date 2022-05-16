@@ -1,5 +1,6 @@
 ﻿using Emgu.CV;
 using Emgu.CV.Structure;
+using Emgu.CV.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,46 @@ namespace EmguCVProject
             Image<Gray, byte> gray_image = My_Image.Convert<Gray, byte>();
             grayImageArea.Image = gray_image.AsBitmap();
             gray_image[0, 0] = new Gray(200);
+
+        }
+        Image<Bgr, Byte> My_Image2;
+        int[,] b ;
+        private void contrastBtn_Click(object sender, EventArgs e)
+        {
+            double alpha = Convert.ToDouble(alphaTB.Text);
+            int beta = Convert.ToInt32(betaTB.Text);
+
+            for (int i = 0; i < My_Image.Width / 2; i++)
+            {
+                for (int j = 0; j < My_Image.Height / 2; j++)
+                {
+                    //My_Image2[i, j] = My_Image[i, j] *alpha + beta;
+                }
+            }
+        }
+          
+
+        private void histogramBtn_Click(object sender, EventArgs e)
+        {
+            HistogramViewer v = new HistogramViewer();
+            v.HistogramCtrl.GenerateHistograms(My_Image, 255);
+            v.Show();
+        }
+
+        private void redBtn_Click(object sender, EventArgs e)
+        {
+            Image<Bgr, Byte> outputImage = new Image<Bgr, byte>(My_Image.Size);
+            My_Image.CopyTo(outputImage);
+            var data = outputImage.Data;
+            for (int i = 0; i < outputImage.Width; i++)
+            {
+                for (int j = 0; j < outputImage.Height; j++)
+                {
+                    data[j, i, 0] = 0;
+                    data[j, i, 1] = 0;
+                }
+            }
+            redArea.Image = outputImage.AsBitmap();
 
         }
     }

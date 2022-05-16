@@ -23,3 +23,28 @@ C:\Users\Andrei PC\source\repos\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCV
 C:\Users\Andrei PC\source\repos\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.CoreCompileInputs.cache
 C:\Users\Andrei PC\source\repos\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.exe
 C:\Users\Andrei PC\source\repos\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.pdb
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\EmguCVProject.exe.config
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\EmguCVProject.exe
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\EmguCVProject.pdb
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\Emgu.CV.Platform.NetStandard.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\Emgu.CV.Bitmap.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\cvextern.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\opencv_videoio_ffmpeg455_64.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\Emgu.CV.Platform.NetFramework.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\concrt140.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\msvcp140.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\msvcp140_1.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\msvcp140_2.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\msvcp140_atomic_wait.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\msvcp140_codecvt_ids.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\vcruntime140.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\vcruntime140_1.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\bin\x64\Debug\System.Drawing.Common.dll
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.Form1.resources
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.Properties.Resources.resources
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.GenerateResource.cache
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.CopyComplete
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.exe
+C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.pdb
