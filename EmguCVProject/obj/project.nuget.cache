@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "isJ97dSxkYNnokitAn+XLeuzHi+o96HbljCwW4d9kErlEmzYQz90LYnVp19//S6ISmKZO9M3rxqXwQ5qbJ6/EA==",
+  "dgSpecHash": "MtqSOt82GWDw8hyF2uGkikqUFjGUWoTb7Bcz1t7tHH5momcXpVRph1MCPiz+Xwk6t4X5qkSYZi7vkB8ynkGNtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrei PC\\source\\repos\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj",
+  "projectFilePath": "C:\\Users\\Andrei PC\\OneDrive\\Desktop\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrei PC\\.nuget\\packages\\emgu.cv\\4.5.5.4823\\emgu.cv.4.5.5.4823.nupkg.sha512",
     "C:\\Users\\Andrei PC\\.nuget\\packages\\emgu.cv.bitmap\\4.5.5.4823\\emgu.cv.bitmap.4.5.5.4823.nupkg.sha512",

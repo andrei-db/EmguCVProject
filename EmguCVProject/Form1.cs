@@ -38,20 +38,12 @@ namespace EmguCVProject
             gray_image[0, 0] = new Gray(200);
 
         }
-        Image<Bgr, Byte> My_Image2;
-        int[,] b ;
         private void contrastBtn_Click(object sender, EventArgs e)
         {
             double alpha = Convert.ToDouble(alphaTB.Text);
             int beta = Convert.ToInt32(betaTB.Text);
 
-            for (int i = 0; i < My_Image.Width / 2; i++)
-            {
-                for (int j = 0; j < My_Image.Height / 2; j++)
-                {
-                    //My_Image2[i, j] = My_Image[i, j] *alpha + beta;
-                }
-            }
+            contrastArea.Image= My_Image.Mul(alpha+beta).AsBitmap();
         }
           
 

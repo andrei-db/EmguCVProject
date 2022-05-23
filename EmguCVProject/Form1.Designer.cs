@@ -89,6 +89,7 @@ namespace EmguCVProject
             this.contrastArea.Location = new System.Drawing.Point(641, 158);
             this.contrastArea.Name = "contrastArea";
             this.contrastArea.Size = new System.Drawing.Size(159, 129);
+            this.contrastArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.contrastArea.TabIndex = 4;
             this.contrastArea.TabStop = false;
             // 

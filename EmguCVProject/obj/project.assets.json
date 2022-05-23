@@ -922,21 +922,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrei PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\EmguCVProject.csproj",
+      "projectUniqueName": "C:\\Users\\Andrei PC\\OneDrive\\Desktop\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj",
       "projectName": "EmguCVProject",
-      "projectPath": "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\EmguCVProject.csproj",
-      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\Desktop\\EmguCVproject\\EmguCVProject\\obj\\",
+      "projectPath": "C:\\Users\\Andrei PC\\OneDrive\\Desktop\\EmguCVProject\\EmguCVProject\\EmguCVProject.csproj",
+      "packagesPath": "C:\\Users\\Andrei PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andrei PC\\OneDrive\\Desktop\\EmguCVProject\\EmguCVProject\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Andrei PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"

@@ -48,3 +48,28 @@ C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject
 C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.CopyComplete
 C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.exe
 C:\Users\Student\Desktop\EmguCVproject\EmguCVProject\obj\x64\Debug\EmguCVProject.pdb
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\EmguCVProject.exe.config
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\EmguCVProject.exe
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\EmguCVProject.pdb
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\Emgu.CV.Platform.NetStandard.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\Emgu.CV.Bitmap.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\cvextern.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\opencv_videoio_ffmpeg455_64.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\Emgu.CV.Platform.NetFramework.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\concrt140.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\msvcp140.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\msvcp140_1.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\msvcp140_2.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\msvcp140_atomic_wait.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\msvcp140_codecvt_ids.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\vcruntime140.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\vcruntime140_1.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\bin\x64\Debug\System.Drawing.Common.dll
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.AssemblyReference.cache
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.Form1.resources
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.Properties.Resources.resources
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.GenerateResource.cache
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.csproj.CoreCompileInputs.cache
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.exe
+C:\Users\Andrei PC\OneDrive\Desktop\EmguCVProject\EmguCVProject\obj\x64\Debug\EmguCVProject.pdb
