@@ -70,5 +70,12 @@ namespace EmguCVProject
             redArea.Image = outputImage.AsBitmap();
 
         }
+
+        private void gammaBtn_Click(object sender, EventArgs e)
+        {
+          
+            My_Image._GammaCorrect(0.3);
+            gammaArea.Image = My_Image.AsBitmap();
+        }
     }
 }

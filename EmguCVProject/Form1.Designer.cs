@@ -40,10 +40,13 @@ namespace EmguCVProject
             this.histogramBtn = new System.Windows.Forms.Button();
             this.redBtn = new System.Windows.Forms.Button();
             this.redArea = new System.Windows.Forms.PictureBox();
+            this.gammaBtn = new System.Windows.Forms.Button();
+            this.gammaArea = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grayImageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gammaArea)).BeginInit();
             this.SuspendLayout();
             // 
             // openImageBtn
@@ -146,11 +149,32 @@ namespace EmguCVProject
             this.redArea.TabIndex = 10;
             this.redArea.TabStop = false;
             // 
+            // gammaBtn
+            // 
+            this.gammaBtn.Location = new System.Drawing.Point(688, 583);
+            this.gammaBtn.Name = "gammaBtn";
+            this.gammaBtn.Size = new System.Drawing.Size(75, 23);
+            this.gammaBtn.TabIndex = 11;
+            this.gammaBtn.Text = "gamma";
+            this.gammaBtn.UseVisualStyleBackColor = true;
+            this.gammaBtn.Click += new System.EventHandler(this.gammaBtn_Click);
+            // 
+            // gammaArea
+            // 
+            this.gammaArea.Location = new System.Drawing.Point(664, 421);
+            this.gammaArea.Name = "gammaArea";
+            this.gammaArea.Size = new System.Drawing.Size(153, 131);
+            this.gammaArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gammaArea.TabIndex = 12;
+            this.gammaArea.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 651);
+            this.Controls.Add(this.gammaArea);
+            this.Controls.Add(this.gammaBtn);
             this.Controls.Add(this.redArea);
             this.Controls.Add(this.redBtn);
             this.Controls.Add(this.histogramBtn);
@@ -168,6 +192,7 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.grayImageArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gammaArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +211,8 @@ namespace EmguCVProject
         private System.Windows.Forms.Button histogramBtn;
         private System.Windows.Forms.Button redBtn;
         private System.Windows.Forms.PictureBox redArea;
+        private System.Windows.Forms.Button gammaBtn;
+        private System.Windows.Forms.PictureBox gammaArea;
     }
 }
 
