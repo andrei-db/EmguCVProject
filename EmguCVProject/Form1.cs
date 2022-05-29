@@ -18,6 +18,7 @@ namespace EmguCVProject
         public Form1()
         {
             InitializeComponent();
+            
         }
         Image<Bgr, Byte> My_Image;
         private void openImageBtn_Click(object sender, EventArgs e)
@@ -27,8 +28,9 @@ namespace EmguCVProject
             {
                 My_Image = new Image<Bgr, byte>(Openfile.FileName);
                 imageArea.Image = My_Image.ToBitmap();
-            }
 
+            }
+            pictureBoxROI.Image = imageArea.Image;
         }
 
         private void grayImageBtn_Click(object sender, EventArgs e)
@@ -79,8 +81,65 @@ namespace EmguCVProject
 
         private void scaleBtn_Click(object sender, EventArgs e)
         {
-            float milsugi = 2.0F;
-            scaleArea.Image=My_Image.Resize(milsugi, Emgu.CV.CvEnum.Inter.Cubic).AsBitmap();
+            float timesZoom = 0.7F;
+            scaleArea.Image=My_Image.Resize(timesZoom, Emgu.CV.CvEnum.Inter.Cubic).AsBitmap();
+        }
+
+        private void rotateBtn_Click(object sender, EventArgs e)
+        {
+            float angle = 45.0F;
+            Bgr sall = new Bgr();
+            rotateArea.Image = My_Image.Rotate(angle, sall,true).AsBitmap();
+        }
+        Rectangle rect; Point StartROI; bool MouseDown;
+   
+        private void pictureBoxROI_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+            if (pictureBoxROI.Image == null)
+            {
+                return;
+            }
+
+            int width = Math.Max(StartROI.X, e.X) - Math.Min(StartROI.X, e.X);
+            int height = Math.Max(StartROI.Y, e.Y) - Math.Min(StartROI.Y, e.Y);
+            rect = new Rectangle(Math.Min(StartROI.X, e.X),
+                Math.Min(StartROI.Y, e.Y),
+                width,
+                height);
+            Refresh();
+
+        }
+
+        private void pictureBoxROI_MouseDown(object sender, MouseEventArgs e)
+        {
+            MouseDown = true;
+            StartROI = e.Location;
+        }
+
+        private void pictureBoxROI_Paint(object sender, PaintEventArgs e)
+        {
+            if (MouseDown)
+            {
+                using (Pen pen = new Pen(Color.Red, 1))
+                {
+                    e.Graphics.DrawRectangle(pen, rect);
+                }
+            }
+
+        }
+
+        private void pictureBoxROI_MouseUp(object sender, MouseEventArgs e)
+        {
+            MouseDown = false;
+            if (pictureBoxROI.Image == null || rect == Rectangle.Empty)
+            { return; }
+
+            var img = new Bitmap(pictureBoxROI.Image).ToImage<Bgr, byte>();
+            img.ROI = rect;
+            var imgROI = img.Copy();
+
+            pictureBoxROI.Image = imgROI.ToBitmap();
         }
     }
 }

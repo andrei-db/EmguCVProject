@@ -45,12 +45,17 @@ namespace EmguCVProject
             this.gammaTB = new System.Windows.Forms.TextBox();
             this.scaleArea = new System.Windows.Forms.PictureBox();
             this.scaleBtn = new System.Windows.Forms.Button();
+            this.rotateBtn = new System.Windows.Forms.Button();
+            this.rotateArea = new System.Windows.Forms.PictureBox();
+            this.pictureBoxROI = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grayImageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gammaArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotateArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxROI)).BeginInit();
             this.SuspendLayout();
             // 
             // openImageBtn
@@ -190,7 +195,7 @@ namespace EmguCVProject
             // 
             // scaleBtn
             // 
-            this.scaleBtn.Location = new System.Drawing.Point(43, 458);
+            this.scaleBtn.Location = new System.Drawing.Point(73, 458);
             this.scaleBtn.Name = "scaleBtn";
             this.scaleBtn.Size = new System.Drawing.Size(75, 23);
             this.scaleBtn.TabIndex = 15;
@@ -198,11 +203,46 @@ namespace EmguCVProject
             this.scaleBtn.UseVisualStyleBackColor = true;
             this.scaleBtn.Click += new System.EventHandler(this.scaleBtn_Click);
             // 
+            // rotateBtn
+            // 
+            this.rotateBtn.Location = new System.Drawing.Point(247, 458);
+            this.rotateBtn.Name = "rotateBtn";
+            this.rotateBtn.Size = new System.Drawing.Size(75, 23);
+            this.rotateBtn.TabIndex = 16;
+            this.rotateBtn.Text = "Rotate";
+            this.rotateBtn.UseVisualStyleBackColor = true;
+            this.rotateBtn.Click += new System.EventHandler(this.rotateBtn_Click);
+            // 
+            // rotateArea
+            // 
+            this.rotateArea.Location = new System.Drawing.Point(219, 342);
+            this.rotateArea.Name = "rotateArea";
+            this.rotateArea.Size = new System.Drawing.Size(130, 110);
+            this.rotateArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rotateArea.TabIndex = 17;
+            this.rotateArea.TabStop = false;
+            // 
+            // pictureBoxROI
+            // 
+            this.pictureBoxROI.Location = new System.Drawing.Point(414, 342);
+            this.pictureBoxROI.Name = "pictureBoxROI";
+            this.pictureBoxROI.Size = new System.Drawing.Size(258, 224);
+            this.pictureBoxROI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxROI.TabIndex = 18;
+            this.pictureBoxROI.TabStop = false;
+            this.pictureBoxROI.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxROI_Paint);
+            this.pictureBoxROI.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseDown);
+            this.pictureBoxROI.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseMove);
+            this.pictureBoxROI.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 651);
+            this.Controls.Add(this.pictureBoxROI);
+            this.Controls.Add(this.rotateArea);
+            this.Controls.Add(this.rotateBtn);
             this.Controls.Add(this.scaleBtn);
             this.Controls.Add(this.scaleArea);
             this.Controls.Add(this.gammaTB);
@@ -227,6 +267,8 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.redArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gammaArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotateArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxROI)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,6 +292,9 @@ namespace EmguCVProject
         private System.Windows.Forms.TextBox gammaTB;
         private System.Windows.Forms.PictureBox scaleArea;
         private System.Windows.Forms.Button scaleBtn;
+        private System.Windows.Forms.Button rotateBtn;
+        private System.Windows.Forms.PictureBox rotateArea;
+        private System.Windows.Forms.PictureBox pictureBoxROI;
     }
 }
 
