@@ -42,16 +42,20 @@ namespace EmguCVProject
             this.redArea = new System.Windows.Forms.PictureBox();
             this.gammaBtn = new System.Windows.Forms.Button();
             this.gammaArea = new System.Windows.Forms.PictureBox();
+            this.gammaTB = new System.Windows.Forms.TextBox();
+            this.scaleArea = new System.Windows.Forms.PictureBox();
+            this.scaleBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grayImageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gammaArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).BeginInit();
             this.SuspendLayout();
             // 
             // openImageBtn
             // 
-            this.openImageBtn.Location = new System.Drawing.Point(116, 311);
+            this.openImageBtn.Location = new System.Drawing.Point(12, 239);
             this.openImageBtn.Name = "openImageBtn";
             this.openImageBtn.Size = new System.Drawing.Size(106, 23);
             this.openImageBtn.TabIndex = 0;
@@ -61,16 +65,16 @@ namespace EmguCVProject
             // 
             // imageArea
             // 
-            this.imageArea.Location = new System.Drawing.Point(74, 158);
+            this.imageArea.Location = new System.Drawing.Point(3, 90);
             this.imageArea.Name = "imageArea";
-            this.imageArea.Size = new System.Drawing.Size(201, 129);
+            this.imageArea.Size = new System.Drawing.Size(145, 129);
             this.imageArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imageArea.TabIndex = 1;
             this.imageArea.TabStop = false;
             // 
             // grayImageBtn
             // 
-            this.grayImageBtn.Location = new System.Drawing.Point(402, 311);
+            this.grayImageBtn.Location = new System.Drawing.Point(219, 239);
             this.grayImageBtn.Name = "grayImageBtn";
             this.grayImageBtn.Size = new System.Drawing.Size(75, 23);
             this.grayImageBtn.TabIndex = 2;
@@ -80,7 +84,7 @@ namespace EmguCVProject
             // 
             // grayImageArea
             // 
-            this.grayImageArea.Location = new System.Drawing.Point(360, 158);
+            this.grayImageArea.Location = new System.Drawing.Point(177, 90);
             this.grayImageArea.Name = "grayImageArea";
             this.grayImageArea.Size = new System.Drawing.Size(158, 129);
             this.grayImageArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +93,7 @@ namespace EmguCVProject
             // 
             // contrastArea
             // 
-            this.contrastArea.Location = new System.Drawing.Point(641, 158);
+            this.contrastArea.Location = new System.Drawing.Point(360, 90);
             this.contrastArea.Name = "contrastArea";
             this.contrastArea.Size = new System.Drawing.Size(159, 129);
             this.contrastArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +102,7 @@ namespace EmguCVProject
             // 
             // contrastBtn
             // 
-            this.contrastBtn.Location = new System.Drawing.Point(689, 311);
+            this.contrastBtn.Location = new System.Drawing.Point(402, 239);
             this.contrastBtn.Name = "contrastBtn";
             this.contrastBtn.Size = new System.Drawing.Size(75, 23);
             this.contrastBtn.TabIndex = 5;
@@ -108,21 +112,21 @@ namespace EmguCVProject
             // 
             // alphaTB
             // 
-            this.alphaTB.Location = new System.Drawing.Point(664, 51);
+            this.alphaTB.Location = new System.Drawing.Point(402, 12);
             this.alphaTB.Name = "alphaTB";
             this.alphaTB.Size = new System.Drawing.Size(100, 20);
             this.alphaTB.TabIndex = 6;
             // 
             // betaTB
             // 
-            this.betaTB.Location = new System.Drawing.Point(664, 90);
+            this.betaTB.Location = new System.Drawing.Point(402, 38);
             this.betaTB.Name = "betaTB";
             this.betaTB.Size = new System.Drawing.Size(100, 20);
             this.betaTB.TabIndex = 7;
             // 
             // histogramBtn
             // 
-            this.histogramBtn.Location = new System.Drawing.Point(99, 583);
+            this.histogramBtn.Location = new System.Drawing.Point(12, 12);
             this.histogramBtn.Name = "histogramBtn";
             this.histogramBtn.Size = new System.Drawing.Size(75, 23);
             this.histogramBtn.TabIndex = 8;
@@ -132,7 +136,7 @@ namespace EmguCVProject
             // 
             // redBtn
             // 
-            this.redBtn.Location = new System.Drawing.Point(360, 583);
+            this.redBtn.Location = new System.Drawing.Point(572, 239);
             this.redBtn.Name = "redBtn";
             this.redBtn.Size = new System.Drawing.Size(94, 23);
             this.redBtn.TabIndex = 9;
@@ -142,7 +146,7 @@ namespace EmguCVProject
             // 
             // redArea
             // 
-            this.redArea.Location = new System.Drawing.Point(326, 421);
+            this.redArea.Location = new System.Drawing.Point(543, 101);
             this.redArea.Name = "redArea";
             this.redArea.Size = new System.Drawing.Size(151, 118);
             this.redArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +155,7 @@ namespace EmguCVProject
             // 
             // gammaBtn
             // 
-            this.gammaBtn.Location = new System.Drawing.Point(688, 583);
+            this.gammaBtn.Location = new System.Drawing.Point(735, 239);
             this.gammaBtn.Name = "gammaBtn";
             this.gammaBtn.Size = new System.Drawing.Size(75, 23);
             this.gammaBtn.TabIndex = 11;
@@ -161,18 +165,47 @@ namespace EmguCVProject
             // 
             // gammaArea
             // 
-            this.gammaArea.Location = new System.Drawing.Point(664, 421);
+            this.gammaArea.Location = new System.Drawing.Point(720, 90);
             this.gammaArea.Name = "gammaArea";
-            this.gammaArea.Size = new System.Drawing.Size(153, 131);
+            this.gammaArea.Size = new System.Drawing.Size(130, 129);
             this.gammaArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gammaArea.TabIndex = 12;
             this.gammaArea.TabStop = false;
+            // 
+            // gammaTB
+            // 
+            this.gammaTB.Location = new System.Drawing.Point(735, 64);
+            this.gammaTB.Name = "gammaTB";
+            this.gammaTB.Size = new System.Drawing.Size(100, 20);
+            this.gammaTB.TabIndex = 13;
+            // 
+            // scaleArea
+            // 
+            this.scaleArea.Location = new System.Drawing.Point(36, 342);
+            this.scaleArea.Name = "scaleArea";
+            this.scaleArea.Size = new System.Drawing.Size(157, 110);
+            this.scaleArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.scaleArea.TabIndex = 14;
+            this.scaleArea.TabStop = false;
+            // 
+            // scaleBtn
+            // 
+            this.scaleBtn.Location = new System.Drawing.Point(43, 458);
+            this.scaleBtn.Name = "scaleBtn";
+            this.scaleBtn.Size = new System.Drawing.Size(75, 23);
+            this.scaleBtn.TabIndex = 15;
+            this.scaleBtn.Text = "Scale";
+            this.scaleBtn.UseVisualStyleBackColor = true;
+            this.scaleBtn.Click += new System.EventHandler(this.scaleBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 651);
+            this.Controls.Add(this.scaleBtn);
+            this.Controls.Add(this.scaleArea);
+            this.Controls.Add(this.gammaTB);
             this.Controls.Add(this.gammaArea);
             this.Controls.Add(this.gammaBtn);
             this.Controls.Add(this.redArea);
@@ -193,6 +226,7 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.contrastArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gammaArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,6 +247,9 @@ namespace EmguCVProject
         private System.Windows.Forms.PictureBox redArea;
         private System.Windows.Forms.Button gammaBtn;
         private System.Windows.Forms.PictureBox gammaArea;
+        private System.Windows.Forms.TextBox gammaTB;
+        private System.Windows.Forms.PictureBox scaleArea;
+        private System.Windows.Forms.Button scaleBtn;
     }
 }
 

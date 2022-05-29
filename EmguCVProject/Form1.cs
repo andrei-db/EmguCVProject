@@ -73,9 +73,14 @@ namespace EmguCVProject
 
         private void gammaBtn_Click(object sender, EventArgs e)
         {
-          
-            My_Image._GammaCorrect(0.3);
+            My_Image._GammaCorrect(Convert.ToDouble(gammaTB.Text));
             gammaArea.Image = My_Image.AsBitmap();
+        }
+
+        private void scaleBtn_Click(object sender, EventArgs e)
+        {
+            float milsugi = 2.0F;
+            scaleArea.Image=My_Image.Resize(milsugi, Emgu.CV.CvEnum.Inter.Cubic).AsBitmap();
         }
     }
 }
