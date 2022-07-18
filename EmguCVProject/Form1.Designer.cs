@@ -48,7 +48,7 @@ namespace EmguCVProject
             this.rotateBtn = new System.Windows.Forms.Button();
             this.rotateArea = new System.Windows.Forms.PictureBox();
             this.pictureBoxROI = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.videoArea = new System.Windows.Forms.PictureBox();
             this.loadEvent = new System.Windows.Forms.Button();
             this.trackBar = new System.Windows.Forms.TrackBar();
             this.playEvent = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxROI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -233,8 +233,8 @@ namespace EmguCVProject
             // 
             this.pictureBoxROI.Location = new System.Drawing.Point(414, 342);
             this.pictureBoxROI.Name = "pictureBoxROI";
-            this.pictureBoxROI.Size = new System.Drawing.Size(258, 224);
-            this.pictureBoxROI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxROI.Size = new System.Drawing.Size(327, 166);
+            this.pictureBoxROI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBoxROI.TabIndex = 18;
             this.pictureBoxROI.TabStop = false;
             this.pictureBoxROI.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxROI_Paint);
@@ -242,14 +242,14 @@ namespace EmguCVProject
             this.pictureBoxROI.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseMove);
             this.pictureBoxROI.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseUp);
             // 
-            // pictureBox1
+            // videoArea
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(895, 136);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(520, 343);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.videoArea.Location = new System.Drawing.Point(895, 136);
+            this.videoArea.Name = "videoArea";
+            this.videoArea.Size = new System.Drawing.Size(520, 343);
+            this.videoArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.videoArea.TabIndex = 19;
+            this.videoArea.TabStop = false;
             // 
             // loadEvent
             // 
@@ -296,7 +296,7 @@ namespace EmguCVProject
             this.Controls.Add(this.playEvent);
             this.Controls.Add(this.trackBar);
             this.Controls.Add(this.loadEvent);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.videoArea);
             this.Controls.Add(this.pictureBoxROI);
             this.Controls.Add(this.rotateArea);
             this.Controls.Add(this.rotateBtn);
@@ -326,7 +326,7 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxROI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -354,7 +354,7 @@ namespace EmguCVProject
         private System.Windows.Forms.Button rotateBtn;
         private System.Windows.Forms.PictureBox rotateArea;
         private System.Windows.Forms.PictureBox pictureBoxROI;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox videoArea;
         private System.Windows.Forms.Button loadEvent;
         private System.Windows.Forms.TrackBar trackBar;
         private System.Windows.Forms.Button playEvent;
