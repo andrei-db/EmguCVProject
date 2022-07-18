@@ -1,4 +1,5 @@
 ﻿using Emgu.CV;
+using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using Emgu.CV.UI;
 using System;
@@ -18,7 +19,7 @@ namespace EmguCVProject
         public Form1()
         {
             InitializeComponent();
-            
+
         }
         Image<Bgr, Byte> My_Image;
         private void openImageBtn_Click(object sender, EventArgs e)
@@ -45,9 +46,9 @@ namespace EmguCVProject
             double alpha = Convert.ToDouble(alphaTB.Text);
             int beta = Convert.ToInt32(betaTB.Text);
 
-            contrastArea.Image= My_Image.Mul(alpha+beta).AsBitmap();
+            contrastArea.Image = My_Image.Mul(alpha + beta).AsBitmap();
         }
-          
+
 
         private void histogramBtn_Click(object sender, EventArgs e)
         {
@@ -82,20 +83,20 @@ namespace EmguCVProject
         private void scaleBtn_Click(object sender, EventArgs e)
         {
             float timesZoom = 0.7F;
-            scaleArea.Image=My_Image.Resize(timesZoom, Emgu.CV.CvEnum.Inter.Cubic).AsBitmap();
+            scaleArea.Image = My_Image.Resize(timesZoom, Emgu.CV.CvEnum.Inter.Cubic).AsBitmap();
         }
 
         private void rotateBtn_Click(object sender, EventArgs e)
         {
             float angle = 45.0F;
             Bgr sall = new Bgr();
-            rotateArea.Image = My_Image.Rotate(angle, sall,true).AsBitmap();
+            rotateArea.Image = My_Image.Rotate(angle, sall, true).AsBitmap();
         }
         Rectangle rect; Point StartROI; bool MouseDown;
-   
+
         private void pictureBoxROI_MouseMove(object sender, MouseEventArgs e)
         {
-            
+
             if (pictureBoxROI.Image == null)
             {
                 return;
@@ -141,5 +142,60 @@ namespace EmguCVProject
 
             pictureBoxROI.Image = imgROI.ToBitmap();
         }
+
+        int TotalFrame, FrameNo;
+        double Fps;
+        bool IsReadingFrame;
+        VideoCapture capture;
+
+        private void loadEvent_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                capture = new VideoCapture(ofd.FileName);
+                Mat m = new Mat();
+                capture.Read(m);
+                pictureBox1.Image = m.ToBitmap();
+
+                TotalFrame = (int)capture.Get(CapProp.FrameCount);
+                Fps = capture.Get(CapProp.Fps);
+                FrameNo = 1;
+                trackBar.Value = FrameNo;
+                trackBar.Minimum = 0;
+                trackBar.Maximum = TotalFrame;
+
+            }
+
+        }
+
+        private void playEvent_Click(object sender, EventArgs e)
+        {
+            if (capture == null)
+            {
+                return;
+            }
+            IsReadingFrame = true;
+            ReadAllFrames();
+        }
+
+        private async void ReadAllFrames()
+        {
+
+            Mat m = new Mat();
+            while (IsReadingFrame == true && FrameNo < TotalFrame)
+            {
+                FrameNo += 1;
+                var mat = capture.QueryFrame();
+                pictureBox1.Image = mat.ToBitmap();
+                await Task.Delay(1000 / Convert.ToInt16(Fps));
+                fpsLabel.Text = FrameNo.ToString() + "/" + TotalFrame.ToString();
+            }
+        }
+
+
+
+
+
     }
 }

@@ -48,6 +48,11 @@ namespace EmguCVProject
             this.rotateBtn = new System.Windows.Forms.Button();
             this.rotateArea = new System.Windows.Forms.PictureBox();
             this.pictureBoxROI = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loadEvent = new System.Windows.Forms.Button();
+            this.trackBar = new System.Windows.Forms.TrackBar();
+            this.playEvent = new System.Windows.Forms.Button();
+            this.fpsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grayImageArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastArea)).BeginInit();
@@ -56,6 +61,8 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxROI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // openImageBtn
@@ -235,11 +242,61 @@ namespace EmguCVProject
             this.pictureBoxROI.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseMove);
             this.pictureBoxROI.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxROI_MouseUp);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(895, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(520, 343);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // loadEvent
+            // 
+            this.loadEvent.Location = new System.Drawing.Point(1053, 485);
+            this.loadEvent.Name = "loadEvent";
+            this.loadEvent.Size = new System.Drawing.Size(75, 23);
+            this.loadEvent.TabIndex = 20;
+            this.loadEvent.Text = "Load";
+            this.loadEvent.UseVisualStyleBackColor = true;
+            this.loadEvent.Click += new System.EventHandler(this.loadEvent_Click);
+            // 
+            // trackBar
+            // 
+            this.trackBar.Location = new System.Drawing.Point(1077, 514);
+            this.trackBar.Name = "trackBar";
+            this.trackBar.Size = new System.Drawing.Size(104, 45);
+            this.trackBar.TabIndex = 21;
+            // 
+            // playEvent
+            // 
+            this.playEvent.Location = new System.Drawing.Point(1134, 485);
+            this.playEvent.Name = "playEvent";
+            this.playEvent.Size = new System.Drawing.Size(75, 23);
+            this.playEvent.TabIndex = 22;
+            this.playEvent.Text = "Play";
+            this.playEvent.UseVisualStyleBackColor = true;
+            this.playEvent.Click += new System.EventHandler(this.playEvent_Click);
+            // 
+            // fpsLabel
+            // 
+            this.fpsLabel.AutoSize = true;
+            this.fpsLabel.Location = new System.Drawing.Point(1131, 64);
+            this.fpsLabel.Name = "fpsLabel";
+            this.fpsLabel.Size = new System.Drawing.Size(27, 13);
+            this.fpsLabel.TabIndex = 23;
+            this.fpsLabel.Text = "FPS";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 651);
+            this.ClientSize = new System.Drawing.Size(1558, 720);
+            this.Controls.Add(this.fpsLabel);
+            this.Controls.Add(this.playEvent);
+            this.Controls.Add(this.trackBar);
+            this.Controls.Add(this.loadEvent);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxROI);
             this.Controls.Add(this.rotateArea);
             this.Controls.Add(this.rotateBtn);
@@ -269,6 +326,8 @@ namespace EmguCVProject
             ((System.ComponentModel.ISupportInitialize)(this.scaleArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxROI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,6 +354,11 @@ namespace EmguCVProject
         private System.Windows.Forms.Button rotateBtn;
         private System.Windows.Forms.PictureBox rotateArea;
         private System.Windows.Forms.PictureBox pictureBoxROI;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button loadEvent;
+        private System.Windows.Forms.TrackBar trackBar;
+        private System.Windows.Forms.Button playEvent;
+        private System.Windows.Forms.Label fpsLabel;
     }
 }
 
